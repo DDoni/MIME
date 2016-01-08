@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+              android:background="#b0d3d4"
+              android:orientation="vertical"
+              android:weightSum="20">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:weightSum="10">
+
+        <ImageButton
+            android:id="@+id/pjinfo_backBtn"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.8"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_back"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="7.2"
+            android:gravity="center"
+            android:text="      장기움짤"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/pjinfo_saveBtn"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_complete"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="1.5"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <EditText
+            android:id="@+id/pjinfo_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:gravity="left|center"
+            android:hint="input title"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        android:paddingBottom="1dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <EditText
+            android:id="@+id/pjinfo_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:gravity="left|center"
+            android:hint="input content"
+            android:inputType="textMultiLine"
+            android:paddingLeft="5dp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="6.5"
+        android:background="#f0f0e4"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:paddingBottom="1dp"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/in_box"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="시 작 일"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/pjinfo_dateBtn"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="8"
+                android:background="#f0f0e4"
+                android:gravity="center"
+                android:text="시작일을 설정하세요 ▼"
+                android:textSize="18sp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2.2"
+                android:background="@drawable/in_box"
+                android:gravity="center"
+                android:text="주     기"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <Switch
+                android:id="@+id/pjinfo_cycle_switch"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.3"
+                android:checked="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pjinfo_cycle_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="-3dp"
+            android:layout_weight="4"
+            android:background="@drawable/in_box"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:visibility="gone"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+
+                android:weightSum="6">
+
+                <Spinner
+                    android:id="@+id/pjinfo_cycle_y"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.3"
+                    android:background="#f0f0e4"
+                    android:entries="@array/spinner_year"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.7"
+                    android:gravity="center|left"
+                    android:text="년"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/pjinfo_cycle_mon"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.35"
+                    android:background="#f0f0e4"
+                    android:entries="@array/spinner_month"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.65"
+                    android:gravity="center|left"
+                    android:text="개월"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/pjinfo_cycle_d"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.35"
+                    android:background="#f0f0e4"
+                    android:entries="@array/spinner_day"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.65"
+                    android:gravity="center|left"
+                    android:text="일"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="2dp"
+
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <Spinner
+                    android:id="@+id/pjinfo_cycle_h"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.3"
+                    android:background="#f0f0e4"
+                    android:entries="@array/spinner_hour"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.7"
+                    android:gravity="center|left"
+                    android:text="시간"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/pjinfo_cycle_m"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.35"
+                    android:background="#f0f0e4"
+                    android:entries="@array/spinner_minute"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.65"
+                    android:gravity="center|left"
+                    android:text="분"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/pjinfo_cycle_s"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.35"
+                    android:background="#f0f0e4"
+                    android:entries="@array/spinner_sec"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.65"
+                    android:gravity="center|left"
+                    android:text="초"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/in_box"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2.05"
+                android:gravity="center"
+                android:text="컷     수"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/pjinfo_count"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2.95"
+                android:background="#f0f0e4"
+                android:entries="@array/cutMaximum"
+                android:gravity="center"
+                android:text="컷    수 ▼"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2"
+
+                android:gravity="center"
+                android:text="알림시간"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/pjinfo_alarm"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:background="#f0f0e4"
+
+                android:gravity="center"
+                android:text="시    간 ▼"
+                android:textSize="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <in.srain.cube.views.GridViewWithHeaderAndFooter
+
+        android:id="@+id/gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="7"
+        android:background="#ffffff"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:paddingBottom="10dp"
+
+        android:verticalSpacing="10dp">
+    </in.srain.cube.views.GridViewWithHeaderAndFooter>
+</LinearLayout><!-- From: file:/D:/AND/androidstudio/workspace/app/src/main/res/layout/project_info.xml -->

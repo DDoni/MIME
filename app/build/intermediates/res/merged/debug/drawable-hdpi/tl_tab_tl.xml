@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/tl_tab1" android:state_selected="true"/>
+    <item android:drawable="@drawable/tl_tab1_sel"/>
+
+</selector><!-- From: file:/D:/AND/androidstudio/workspace/app/src/main/res/drawable-hdpi/tl_tab_tl.xml -->

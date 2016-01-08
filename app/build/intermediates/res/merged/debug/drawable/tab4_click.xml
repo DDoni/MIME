@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/tab_dm_sel" android:state_selected="true">
+
+    </item>
+    <item android:drawable="@drawable/tab_dm">
+    </item>
+</selector><!-- From: file:/D:/AND/androidstudio/workspace/app/src/main/res/drawable/tab4_click.xml -->
