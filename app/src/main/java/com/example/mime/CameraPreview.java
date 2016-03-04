@@ -36,7 +36,6 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
         mHolder.addCallback(this);
         // deprecated 되었지만 3.0 이하 버젼에서 필수 메소드라서 호출해둠.
         mHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
-
     }
 
     public void surfaceCreated(SurfaceHolder holder) {
