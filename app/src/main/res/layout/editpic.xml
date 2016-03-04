@@ -47,6 +47,7 @@
     </LinearLayout>
 
     <LinearLayout
+
         android:id="@+id/sview"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
@@ -76,50 +77,59 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="0dp"
+        android:layout_gravity="bottom"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_weight="1.2"
-        android:background="#ffffff"
+        android:layout_weight="0.8"
         android:orientation="horizontal"
         android:weightSum="10">
 
         <TextView
+            android:id="@+id/editpic_total_cnt"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:gravity="right|center_vertical"
-            android:text="-"/>
-
-        <SeekBar
-            android:id="@+id/editpic_bar"
-            android:layout_width="0dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="8"
-            android:paddingBottom="5dp"/>
+            android:layout_weight="1.5"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="Total : 2"
+            android:textSize="12sp"/>
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:gravity="left|center_vertical"
-            android:text="+"/>
-    </LinearLayout>
+            android:layout_weight="0.5"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="/"
+            android:textSize="12sp"/>
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="1dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_weight="0.6">
+        <TextView
+            android:id="@+id/editpic_pick_cnt"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="Pick : 2"
+            android:textSize="12sp"/>
 
         <TextView
             android:id="@+id/editpic_speed"
-            android:layout_width="fill_parent"
+            android:layout_width="0dp"
             android:layout_height="fill_parent"
+            android:layout_weight="5.3"
             android:background="#ffffff"
-            android:gravity="top|center_horizontal"
-            android:text="재생 속도 : 1"
+            android:gravity="center"
+            android:text="재생 속도 : 기본    "
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.2"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="역순"
             android:textSize="12sp"/>
     </LinearLayout>
 
@@ -127,22 +137,61 @@
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_weight="5.15"
-        android:background="#ffffff">
+        android:layout_weight="0.8"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+        <SeekBar
+            android:id="@+id/editpic_bar"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_weight="9"
+            android:background="@android:color/transparent"
+            android:paddingBottom="5dp"
+            android:progressDrawable="@drawable/seekbar_image"
+            android:thumb="@drawable/scrollbar_handle"
+            />
+
+
+        <CheckBox
+            android:id="@+id/editpic_reverse"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+
+            android:background="@android:color/transparent"
+            android:button="@drawable/checkbox_check"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="5"
+        android:background="#ffffff"
+        android:paddingBottom="2dp">
 
         <GridView
             android:id="@+id/gridView"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:horizontalSpacing="10dp"
+            android:horizontalSpacing="5dp"
             android:numColumns="3"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:verticalSpacing="10dp">
+            android:verticalSpacing="7dp">
         </GridView>
     </LinearLayout>
 

@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
 import android.graphics.Rect;
 import android.graphics.YuvImage;
 import android.hardware.Camera;
@@ -22,6 +23,7 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
     private SurfaceHolder mHolder;
     private Camera mCamera;
     Button shut;
+    public static Boolean mCheck = false;
 
     public CameraPreview(Context context, Camera camera) {
 
@@ -66,21 +68,6 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
                     mCamera = null;
                 }
             }
-            // 삭제해도 OK
-//            Camera.Parameters parameters = mCamera.getParameters();
-//            if (getResources().getConfiguration().orientation != Configuration.ORIENTATION_LANDSCAPE) {
-//                parameters.set("orientation", "portrait");
-//                mCamera.setDisplayOrientation(90);
-//                parameters.setRotation(90);
-//            } else {
-//                parameters.set("orientation", "landscape");
-//                mCamera.setDisplayOrientation(0);
-//                parameters.setRotation(0);
-//            }
-//            mCamera.setParameters(parameters);
-//            mCamera.setPreviewCallback(this);
-//            mCamera.setPreviewDisplay(holder);
-//            mCamera.startPreview();
         } catch (Exception e) {
             Log.d(TAG, "Error setting camera preview: " + e.getMessage());
             mCamera.release();
@@ -89,13 +76,13 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
     }
 
     public void surfaceDestroyed(SurfaceHolder holder) {
-
         // 프리뷰 제거시 카메라 사용도 끝났다고 간주하여 리소스를 전부 반환한다
         if (mCamera != null) {
+
             mCamera.stopPreview();
             mCamera.release();
             mCamera = null;
-
+            System.out.print("destroy!!!!");
         }
     }
 
@@ -158,18 +145,27 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
     public void onPreviewFrame(byte[] data, Camera camera) {
         // TODO Auto-generated method stub
 
-        mCamera.stopPreview();
-        Camera.Parameters parameters = camera.getParameters();
-        Size size = parameters.getPreviewSize();
-        YuvImage image = new YuvImage(data, parameters.getPreviewFormat(), size.width, size.height, null);
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        Rect area = new Rect(0, 0, size.width, size.height);
-        image.compressToJpeg(area, 100, out);
-        Bitmap bit = BitmapFactory.decodeByteArray(out.toByteArray(), 0, out.size());
-        GifCamera.image_temp.add(bit);
+        if (mCheck == true) {
+            Log.d("CamearaPreview", "onPreviewFrame data : " + data.toString());
+            Camera.Parameters parameters = camera.getParameters();
+            Size size = parameters.getPreviewSize();
+            YuvImage image = new YuvImage(data, parameters.getPreviewFormat(), size.width, size.height, null);
+            ByteArrayOutputStream out = new ByteArrayOutputStream();
+            Rect area = new Rect(0, 0, size.width, size.height);
+            image.compressToJpeg(area, 70, out);
+            Bitmap bit = BitmapFactory.decodeByteArray(out.toByteArray(), 0, out.size());
 
-        mCamera.startPreview();
+            GifCamera.image_temp.add(rotateImage(bit, 90));
+            mCheck = false;
+        }
 
+    }
+
+    public Bitmap rotateImage(Bitmap src, float degree) {
+        Matrix matrix = new Matrix();
+        matrix.postRotate(degree);
+
+        return Bitmap.createBitmap(src, 0, 0, src.getWidth(), src.getHeight(), matrix, true);
     }
 
 }

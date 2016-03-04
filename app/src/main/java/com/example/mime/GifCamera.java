@@ -1,27 +1,12 @@
 package com.example.mime;
 
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Rect;
-import android.graphics.YuvImage;
 import android.hardware.Camera;
-import android.hardware.Camera.AutoFocusCallback;
-import android.hardware.Camera.PreviewCallback;
-import android.hardware.Camera.Size;
 import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
@@ -31,20 +16,21 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
-import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
 
 public class GifCamera extends Activity implements View.OnClickListener {
     String TAG = "CAMERA";
     private Context mContext = this;
     private Camera mCamera;
     private CameraPreview mPreview;
-    ImageButton shutBtn, backBtn, nextBtn, changeBtn, albumBtn;
+    ImageButton backBtn, nextBtn, changeBtn, albumBtn;
+    TextView shutCount;
     private boolean isPhotoTaken = false;
-    private boolean isFocused = false;
 
     static ArrayList<Bitmap> image_temp;
     FrameLayout preview;
@@ -66,8 +52,6 @@ public class GifCamera extends Activity implements View.OnClickListener {
     private Handler mHandler = null;
     // 연속 촬영 필요 변수 정리 - ed
 
-    int longCount = 0;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -86,13 +70,7 @@ public class GifCamera extends Activity implements View.OnClickListener {
             preview.addView(mPreview);
         }
         count = 0;
-//        mCheck = (RadioButton) findViewById(R.id.focus);
-//        mCheck.setChecked(false);
-//        mCheck.setClickable(false);
-//        mCheck.setAlpha(0.15f); // ???????????? 15-> 0.15f
 
-//        shutBtn = (ImageButton) findViewById(R.id.gifCamera_shutBtn);
-//        findViewById(R.id.gifCamera_shutBtn).setOnClickListener(this);
         frame = (FrameLayout) findViewById(R.id.camera_preview);
         findViewById(R.id.camera_preview).setOnClickListener(this);
         backBtn = (ImageButton) findViewById(R.id.gifCamera_backBtn);
@@ -103,10 +81,13 @@ public class GifCamera extends Activity implements View.OnClickListener {
         findViewById(R.id.gifCamera_change).setOnClickListener(this);
         albumBtn = (ImageButton) findViewById(R.id.gifCamera_album);
         findViewById(R.id.gifCamera_album).setOnClickListener(this);
+        shutCount = (TextView) findViewById(R.id.gifCamera_count);
+        shutCount.setText("0장");
 
         mHandler = new Handler();
         mTouchSlop = ViewConfiguration.get(this).getScaledTouchSlop();
         mCamera.startPreview();
+
         frame.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -118,7 +99,7 @@ public class GifCamera extends Activity implements View.OnClickListener {
                         mLastMotionY = event.getY(); // 시작 위치 저장
 
                         mHasPerformedLongPress = false;
-                        postCheckForLongClick(250); // LongClick Message set
+                        postCheckForLongClick(250); // LongClick Message set - 150
 
                         break;
 
@@ -127,10 +108,11 @@ public class GifCamera extends Activity implements View.OnClickListener {
                         Log.d("CLICK", "ACTION_MOVE");
 
                         if (mHasPerformedLongPress == true) {
+                            CameraPreview.mCheck = true;
                             mCamera.setPreviewCallback(mPreview);
                             count++;
                             System.out.println("long / shut count : " + count);
-                            Toast.makeText(GifCamera.this , image_temp.size()+1 + "장", Toast.LENGTH_SHORT).show();
+                            shutCount.setText(image_temp.size() + 1 + "장");
                         }
 
                         break;
@@ -182,73 +164,16 @@ public class GifCamera extends Activity implements View.OnClickListener {
     @Override
     public void onPause() {
         super.onPause();
+        System.out.println("@@@OnPause@@@");
+        if (mCamera != null) {
+            mCamera.setPreviewCallback(null);
+            mPreview.getHolder().removeCallback(mPreview);
+            mCamera.release();
+        }
         if (isPhotoTaken)
             sendBroadcast(new Intent(Intent.ACTION_MEDIA_MOUNTED,
                     Uri.parse("file://" + Environment.getExternalStorageDirectory())));
-    }
 
-    class ImageSaveTask extends AsyncTask<byte[], Void, Boolean> {
-        @Override
-        protected Boolean doInBackground(byte[]... data) {
-            File pictureFile = getOutputMediaFile();
-            if (pictureFile == null) {
-                return false;
-            }
-            try {
-                FileOutputStream fos = new FileOutputStream(pictureFile);
-                fos.write(data[0]);
-                fos.close();
-            } catch (IOException e) {
-                return false;
-            }
-            return true;
-        }
-
-        @Override
-        protected void onPostExecute(Boolean isDone) {
-            if (isDone) {
-                Toast.makeText(mContext, "Image saved!", Toast.LENGTH_SHORT).show();
-            }
-        }
-
-        private File getOutputMediaFile() {
-            File mediaStorageDir = new File(
-                    Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "MIME");
-            if (!mediaStorageDir.exists()) {
-                if (!mediaStorageDir.mkdirs()) {
-                    Log.d(TAG, "failed to create directory");
-                    return null;
-                }
-            }
-            String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-            File mediaFile;
-            mediaFile = new File(mediaStorageDir.getPath() + File.separator + "IMG_" + timeStamp + ".jpg");
-            Log.i(TAG, "Saved at" + Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES));
-            return mediaFile;
-        }
-    }
-
-    @Override
-    public void onClick(View v) {
-        // TODO Auto-generated method stub
-        switch (v.getId()) {
-            case R.id.gifCamera_backBtn:
-                finish();
-                break;
-            case R.id.gifCamera_nextBtn:
-                System.out.println("next");
-                intent = new Intent(this, EditPics.class);
-                startActivity(intent);
-                finish();
-                break;
-            case R.id.gifCamera_change:
-                System.out.println("Camera Change");
-                int cameraCount = 0;
-                break;
-            case R.id.gifCamera_album:
-                System.out.println("Album");
-                break;
-        }
     }
 
     @Override
@@ -269,6 +194,34 @@ public class GifCamera extends Activity implements View.OnClickListener {
         super.onStop();
     }
 
+    @Override
+    public void onClick(View v) {
+        // TODO Auto-generated method stub
+        switch (v.getId()) {
+            case R.id.gifCamera_backBtn:
+                finish();
+                break;
+            case R.id.gifCamera_nextBtn:
+                System.out.println("next");
+                if (image_temp.size() < 2)
+                    Toast.makeText(this, "2장 이상 촬영하세요.", Toast.LENGTH_SHORT).show();
+                else {
+                    intent = new Intent(this, EditPics.class);
+                    startActivity(intent);
+                    finish();
+                }
+                break;
+            case R.id.gifCamera_change:
+                System.out.println("Camera Change");
+                int cameraCount = 0;
+                break;
+            case R.id.gifCamera_album:
+                System.out.println("Album");
+                break;
+        }
+    }
+
+
     // LongClick 처리 Runnable
     class CheckForLongPress implements Runnable {
         public void run() {
@@ -276,6 +229,7 @@ public class GifCamera extends Activity implements View.OnClickListener {
                 mHasPerformedLongPress = true;
             }
         }
+
     }
 
     // LongClick 처리 설정을 위한 함수
@@ -309,10 +263,12 @@ public class GifCamera extends Activity implements View.OnClickListener {
 
     private void performOneClick() {
         Log.d("CLICK", "One Click OK");
+        CameraPreview.mCheck = true;
         mCamera.setPreviewCallback(mPreview);
         count++;
         System.out.println("short / shut count : " + count);
-        Toast.makeText(GifCamera.this , image_temp.size()+1 + "장", Toast.LENGTH_SHORT).show();
+        shutCount.setText(image_temp.size() + 1 + "장");
+
     }
 }
 

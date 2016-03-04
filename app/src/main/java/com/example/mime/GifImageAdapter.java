@@ -4,30 +4,45 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
 import android.util.DisplayMetrics;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 public class GifImageAdapter extends BaseAdapter {
 
     private Context mContext;
     int count;
     DisplayMetrics mMetrics;
+    int mCellLayout;
+    LayoutInflater mLinflater;
 
-    public GifImageAdapter(Context c, DisplayMetrics m) {
+    static class ImageViewHolder {
+        static ImageView ivImage;
+        static CheckBox chk_select;
+
+
+    }
+
+    public GifImageAdapter(Context c, DisplayMetrics m, int cellLayout) {
         // TODO Auto-generated constructor stub
         this.mContext = c;
         mMetrics = new DisplayMetrics();
         this.mMetrics = m;
+        this.mCellLayout = cellLayout;
+        mLinflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
     }
 
     @Override
     public int getCount() {
         // TODO Auto-generated method stub
         count = GifCamera.image_temp.size();
+
         return count;
     }
 
@@ -44,25 +59,57 @@ public class GifImageAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
         // TODO Auto-generated method stub
 
-        int rowWidth = (mMetrics.widthPixels) / 3;
+        int rowWidth = (mMetrics.widthPixels) / 3 - 30;
+        ImageViewHolder holder;
 
-        ImageView imageView;
         if (convertView == null) {
-            imageView = new ImageView(mContext);
-            imageView.setAdjustViewBounds(true);
-            imageView.setLayoutParams(new GridView.LayoutParams(rowWidth - 10, rowWidth));
-            imageView.setScaleType(ImageView.ScaleType.FIT_XY);
-            imageView.setPadding(10, 1, 10, 1);
+            convertView = mLinflater.inflate(mCellLayout, null);
+            holder = new ImageViewHolder();
+            holder.ivImage = (ImageView) convertView.findViewById(R.id.thumbImage);
+            holder.chk_select = (CheckBox) convertView.findViewById(R.id.itemCheckBox);
+
+            convertView.setLayoutParams(new GridView.LayoutParams(rowWidth, rowWidth));
+
+            holder.ivImage.setScaleType(ImageView.ScaleType.FIT_XY);
+            if (position % 3 == 0)
+                holder.ivImage.setPadding(15, 1, -7, 1);
+            else if (position % 3 == 1)
+                holder.ivImage.setPadding(10, 1, 0, 1);
+            else if (position % 3 == 2)
+                holder.ivImage.setPadding(10, 1, 0, 1);
+
+            convertView.setTag(holder);
+
         } else
-            imageView = (ImageView) convertView;
+            holder = (ImageViewHolder) convertView.getTag();
 
-        imageView.setImageBitmap(rotate(GifCamera.image_temp.get(position), 90));
+        holder.ivImage.setImageBitmap(GifCamera.image_temp.get(position));
+        holder.ivImage.invalidate();
 
-        return imageView;
+        holder.chk_select.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                EditPics.drawble_temp_flag.add(position, !EditPics.drawble_temp_flag.get(position));
+                EditPics.drawble_temp_flag.remove(position + 1);
+                EditPics.drawble_temp_rev_flag.add(EditPics.drawble_temp_rev_flag.size() - 1 - position, !EditPics.drawble_temp_rev_flag.get(EditPics.drawble_temp_rev_flag.size() - 1 - position));
+                EditPics.drawble_temp_rev_flag.remove(EditPics.drawble_temp_rev_flag.size() - 1 - position);
+
+                if (EditPics.rev_Check.isChecked() == false) {
+                    EditPics.aniSetting(EditPics.drawble_temp, EditPics.drawble_temp_flag, EditPics.speed_temp);
+                } else {
+                    EditPics.aniSetting(EditPics.drawble_temp_rev, EditPics.drawble_temp_rev_flag, EditPics.speed_temp);
+                }
+                EditPics.pick_Cnt.setText("Pick : " + EditPics.ani.getNumberOfFrames());
+            }
+        });
+
+        return convertView;
     }
+
 
     static public Bitmap rotate(Bitmap bitmap, int degrees) {
         if (degrees != 0 && bitmap != null) {
@@ -76,10 +123,9 @@ public class GifImageAdapter extends BaseAdapter {
                     converted = null;
                 }
             } catch (OutOfMemoryError ex) {
-                // Toast.makeText(getApplicationContext(), "�޸𸮺���", 0).show();
+
             }
         }
         return bitmap;
     }
-
 }
