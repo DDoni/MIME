@@ -73,7 +73,18 @@
             android:scaleType="fitXY"
             android:src="@drawable/tl_tab_category" />
     </LinearLayout>
-    <ListView
+    <!--<ListView-->
+    <!--android:id="@+id/timeline_listview"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_weight="8.5"-->
+    <!--android:choiceMode="singleChoice"-->
+    <!--android:divider="#000000" >-->
+    <!--</ListView>-->
+    <android.support.v7.widget.RecyclerView
         android:id="@+id/timeline_listview"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
@@ -82,7 +93,6 @@
         android:layout_marginRight="10dp"
         android:layout_weight="8.5"
         android:choiceMode="singleChoice"
-        android:divider="#000000" >
-    </ListView>
-
+        android:divider="#000000"
+        />
 </LinearLayout><!-- From: file:/D:/AND/androidstudio/workspace/app/src/main/res/layout/tab_timeline.xml -->

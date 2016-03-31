@@ -1,214 +1,293 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:2:1-101:12
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:2:1-117:12
 	package
 		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:3:5-31
 		INJECTED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml
 		INJECTED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:5:5-30
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:6:5-30
 	android:versionCode
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:4:5-28
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:5:5-28
 		INJECTED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml
 		INJECTED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:4:5-63
 uses-sdk
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-v4:22.2.1] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:8:5-10:40
+MERGED from [com.android.support:support-v4:23.0.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:appcompat-v7:22.2.1] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:22.2.1] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:design:22.2.1] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\design\22.2.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:appcompat-v7:22.2.1] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:22.2.1] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:22.2.1] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:cardview-v7:22.2.1] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\22.2.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:recyclerview-v7:22.2.1] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\22.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:22.2.1] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:9:9-38
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:10:9-38
 		INJECTED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml
 		INJECTED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:8:9-34
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:9:9-34
 		INJECTED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml
 		INJECTED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml
 application
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:11:5-90:19
-MERGED from [com.android.support:support-v4:22.2.1] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:12:5-94:19
+MERGED from [com.android.support:support-v4:23.0.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:22.2.1] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:22.2.1] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:22.2.1] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\design\22.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:22.2.1] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:22.2.1] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:22.2.1] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:cardview-v7:22.2.1] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\22.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:22.2.1] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:26:5-46:19
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:14:9-41
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:15:9-41
 	android:allowBackup
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:13:9-35
 	android:icon
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:13:9-45
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:14:9-45
 	android:theme
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:15:9-40
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:16:9-40
 activity#com.example.mime.TabMain
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:16:9-26:20
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:17:9-27:20
 	android:screenOrientation
 		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:20:13-49
 	android:label
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:18:13-45
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:19:13-45
 	android:windowSoftInputMode
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:19:13-52
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:21:13-52
 	android:name
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:17:13-36
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:18:13-36
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:21:13-25:29
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:22:13-26:29
 action#android.intent.action.MAIN
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:22:17-69
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:23:17-68
 	android:name
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:22:25-66
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:24:17-77
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:25:17-76
 	android:name
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:24:27-74
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:25:27-74
 activity#com.example.mime.Tab_Notice
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:27:9-33:20
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:28:9-34:20
 	android:clearTaskOnLaunch
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:29:13-45
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:30:13-45
 	android:screenOrientation
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:31:13-49
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:32:13-49
 	android:launchMode
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:30:13-44
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:31:13-44
 	android:windowSoftInputMode
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:32:13-52
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:33:13-52
 	android:name
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:28:13-39
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:29:13-39
 activity#com.example.mime.Tab_Dm
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:34:9-40:20
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:35:9-41:20
 	android:clearTaskOnLaunch
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:36:13-45
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:37:13-45
 	android:screenOrientation
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:38:13-49
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:39:13-49
 	android:launchMode
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:37:13-44
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:38:13-44
 	android:windowSoftInputMode
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:39:13-52
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:40:13-52
 	android:name
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:35:13-35
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:36:13-35
 activity#com.example.mime.Tab_MakeGif
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:41:9-47:20
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:42:9-48:20
 	android:clearTaskOnLaunch
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:43:13-45
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:44:13-45
 	android:screenOrientation
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:45:13-49
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:46:13-49
 	android:launchMode
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:44:13-44
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:45:13-44
 	android:windowSoftInputMode
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:46:13-52
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:47:13-52
 	android:name
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:42:13-40
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:43:13-40
 activity#com.example.mime.Tab_MyPage
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:48:9-54:20
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:49:9-55:20
 	android:clearTaskOnLaunch
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:50:13-45
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:51:13-45
 	android:screenOrientation
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:52:13-49
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:53:13-49
 	android:launchMode
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:51:13-44
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:52:13-44
 	android:windowSoftInputMode
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:53:13-52
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:54:13-52
 	android:name
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:49:13-39
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:50:13-39
 activity#com.example.mime.Tab_Timeline
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:55:9-61:20
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:56:9-62:20
 	android:clearTaskOnLaunch
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:57:13-45
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:58:13-45
 	android:screenOrientation
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:59:13-49
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:60:13-49
 	android:launchMode
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:58:13-44
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:59:13-44
 	android:windowSoftInputMode
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:60:13-52
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:61:13-52
 	android:name
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:56:13-41
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:57:13-41
 activity#com.example.mime.GifCamera
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:62:9-68:20
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:63:9-69:20
 	android:clearTaskOnLaunch
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:64:13-45
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:65:13-45
 	android:screenOrientation
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:66:13-49
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:67:13-49
 	android:launchMode
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:65:13-44
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:66:13-44
 	android:windowSoftInputMode
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:67:13-52
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:68:13-52
 	android:name
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:63:13-38
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:64:13-38
 activity#com.example.mime.EditPics
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:69:9-75:20
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:70:9-76:20
 	android:clearTaskOnLaunch
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:71:13-45
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:72:13-45
 	android:screenOrientation
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:73:13-49
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:74:13-49
 	android:launchMode
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:72:13-44
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:73:13-44
 	android:windowSoftInputMode
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:74:13-52
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:75:13-52
 	android:name
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:70:13-37
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:71:13-37
 activity#com.example.mime.EditContent
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:76:9-82:20
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:77:9-83:20
 	android:clearTaskOnLaunch
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:78:13-45
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:79:13-45
 	android:screenOrientation
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:80:13-49
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:81:13-49
 	android:launchMode
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:79:13-44
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:80:13-44
 	android:windowSoftInputMode
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:81:13-52
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:82:13-52
 	android:name
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:77:13-40
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:78:13-40
 activity#com.example.mime.Project_info
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:83:9-89:20
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:84:9-90:20
 	android:clearTaskOnLaunch
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:85:13-45
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:86:13-45
 	android:screenOrientation
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:87:13-49
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:88:13-49
 	android:launchMode
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:86:13-44
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:87:13-44
 	android:windowSoftInputMode
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:88:13-52
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:89:13-52
 	android:name
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:84:13-41
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:85:13-41
+service#com.example.mime.GcmIntentService
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:93:9-52
+	android:name
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:93:18-50
 uses-permission#android.permission.INTERNET
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:92:5-67
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:96:5-66
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:21:5-67
 	android:name
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:92:22-64
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:96:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:93:5-79
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:97:5-78
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:93:22-76
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:97:22-76
 uses-permission#android.permission.KILL_BACKGROUND_PROCESSES
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:94:5-84
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:98:5-83
 	android:name
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:94:22-81
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:98:22-81
 uses-permission#android.permission.CAMERA
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:95:5-65
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:99:5-64
 	android:name
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:95:22-62
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:99:22-62
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:96:5-80
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:100:5-79
 	android:name
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:96:22-77
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:100:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:97:5-81
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:101:5-80
 	android:name
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:97:22-78
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:101:22-78
 uses-feature#android.hardware.camera
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:98:5-60
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:103:5-59
 	android:name
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:98:19-57
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:103:19-57
 uses-feature#android.hardware.camera.autofocus
-ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:99:5-70
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:104:5-69
 	android:name
-		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:99:19-67
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:104:19-67
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:107:5-70
+	android:name
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:107:22-68
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:108:5-67
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:108:22-65
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:109:5-81
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\AndroidManifest.xml:21:5-82
+	android:name
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:109:22-79
+permission#com.example.gcm.permission.C2D_MESSAGE
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:111:5-113:46
+	android:protectionLevel
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:113:9-44
+	android:name
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:112:9-62
+uses-permission#com.example.gcm.permission.C2D_MESSAGE
+ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:114:5-77
+	android:name
+		ADDED from D:\AND\androidstudio\workspace\app\src\main\AndroidManifest.xml:114:22-75
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:22:13-58
+provider#com.google.android.gms.measurement.AppMeasurementContentProvider
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:28:7-31:37
+	android:authorities
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:29:11-76
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:31:11-35
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:30:11-90
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:33:7-39:18
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:35:11-33
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:34:11-83
+intent-filter#com.google.android.gms.measurement.UPLOAD
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:36:9-38:25
+action#com.google.android.gms.measurement.UPLOAD
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:37:11-77
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:37:19-75
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:41:7-44:37
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:43:11-33
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:44:11-35
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:42:11-82

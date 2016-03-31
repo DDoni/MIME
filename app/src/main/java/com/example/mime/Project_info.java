@@ -10,13 +10,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.CompoundButton;
+import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
-import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TimePicker;
 
@@ -32,9 +30,8 @@ public class Project_info extends Activity implements View.OnClickListener {
     Intent intent;
 
     Button st_date_btn, alarm_btn;
-    Spinner unit_spinner, picNum_spinner;
 
-    EditText pjinfo_title, pjinfo_text;
+    EditText pjinfo_title, pjinfo_text, cycleValue;
 
     DatePickerDialog datePick;
     TimePickerDialog timePick;
@@ -43,8 +40,8 @@ public class Project_info extends Activity implements View.OnClickListener {
     ProjectInfo_GifImageAdapter adapter;
     DisplayMetrics mMetrics;
 
-    Switch switchBtn;
-    LinearLayout cycleDetail;
+    CheckBox cycleCheck;
+
 
     GridViewWithHeaderAndFooter gridView;
 
@@ -67,23 +64,18 @@ public class Project_info extends Activity implements View.OnClickListener {
         alarm_btn = (Button) findViewById(R.id.pjinfo_alarm);
         findViewById(R.id.pjinfo_alarm).setOnClickListener(this);
 
-
         long now = System.currentTimeMillis();
 
-        switchBtn = (Switch) findViewById(R.id.pjinfo_cycle_switch);
-        cycleDetail = (LinearLayout) findViewById(R.id.pjinfo_cycle_detail);
 
+        cycleCheck = (CheckBox) findViewById(R.id.pjinfo_cycle_check);
+        findViewById(R.id.pjinfo_cycle_check).setOnClickListener(this);
+        cycleValue = (EditText) findViewById(R.id.pjinfo_cycle_value);
 
-        switchBtn.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked == false) {
-                    cycleDetail.setVisibility(View.GONE);
+        if (cycleCheck.isChecked() == false)
+            cycleValue.setEnabled(false);
+        else
+            cycleValue.setEnabled(true);
 
-                } else
-                    cycleDetail.setVisibility(View.VISIBLE);
-            }
-        });
 
         Date date = new Date(now);
 
@@ -112,7 +104,7 @@ public class Project_info extends Activity implements View.OnClickListener {
         View headerView = layoutInflater.inflate(R.layout.gridview_header, null);
         headerView.findViewById(R.id.gridAddBtn).setOnClickListener(this);
 
-        gridView.addFooterView(headerView );
+        gridView.addFooterView(headerView);
         gridView.setAdapter(adapter);
         gridView.setOnItemClickListener(gridviewOnItemClickListener);
     }
@@ -130,13 +122,13 @@ public class Project_info extends Activity implements View.OnClickListener {
             st_date_btn.setText(year + "." + monthOfYear + "." + dayOfMonth);
         }
     };
-    public TimePickerDialog.OnTimeSetListener timeListener = new TimePickerDialog.OnTimeSetListener()
-    {
+    public TimePickerDialog.OnTimeSetListener timeListener = new TimePickerDialog.OnTimeSetListener() {
         @Override
         public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
             alarm_btn.setText(hourOfDay + " 시 " + minute + " 분");
         }
     };
+
     @Override
     public void onClick(View v) {
         // TODO Auto-generated method stub
@@ -163,6 +155,13 @@ public class Project_info extends Activity implements View.OnClickListener {
 
             case R.id.gridAddBtn:
 
+                break;
+
+            case  R.id.pjinfo_cycle_check:
+                if (cycleCheck.isChecked() == false)
+                    cycleValue.setEnabled(false);
+                else
+                    cycleValue.setEnabled(true);
                 break;
 
         }

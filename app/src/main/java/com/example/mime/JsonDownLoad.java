@@ -57,13 +57,14 @@ public class JsonDownLoad extends AsyncTask<String, String, String> {
 
         dialog.dismiss();
         if (page.equalsIgnoreCase("Tab_MakeGif") == true) {
-            ArrayList<Project_ListViewItem> pj_list = pj_tabFrame_context.pj_ListAdapter.data;
+
+            ArrayList<Project_ListViewItem> pj_list = new ArrayList<>();
             pj_list.removeAll(pj_list);
 
             try {
                 JSONArray jArray = new JSONArray(result);
                 JSONObject json = null;
-
+                System.out.println("res : " + result);
                 Project_ListViewItem data = null;
                 for (int i = 0; i < jArray.length(); i++) {
                     json = jArray.getJSONObject(i);
@@ -71,11 +72,14 @@ public class JsonDownLoad extends AsyncTask<String, String, String> {
                         data = new Project_ListViewItem();
                         data.setPj_title(json.getString("pj_title").toString());
                         data.setNum(Integer.parseInt(json.getString("pj_num").toString()));
+
                         pj_list.add(data);
-                        pj_tabFrame_context.pj_ListView.invalidateViews();
+                        pj_tabFrame_context.mDataset.add(i, data);
+
                     }
                 }
-                pj_tabFrame_context.pj_ListView.invalidate();
+                pj_tabFrame_context.pj_RecyclerView.invalidate();
+
 
             } catch (Exception e) {
                 // TODO: handle exception
@@ -84,13 +88,14 @@ public class JsonDownLoad extends AsyncTask<String, String, String> {
         }
 
         if (page.equalsIgnoreCase("Tab_Timeline") == true) {
-            ArrayList<TimeLine_ListViewItem> tl_list = tl_tabFrame_context.tl_ListAdapter.data;
+
+            ArrayList<TimeLine_ListViewItem> tl_list = new ArrayList<>();
             tl_list.removeAll(tl_list);
 
             try {
                 JSONArray jArray = new JSONArray(result);
                 JSONObject json = null;
-
+                System.out.println("count : " + jArray.length());
                 TimeLine_ListViewItem data = null;
                 for (int i = 0; i < jArray.length(); i++) {
                     json = jArray.getJSONObject(i);
@@ -102,10 +107,9 @@ public class JsonDownLoad extends AsyncTask<String, String, String> {
                         data.setTl_dir(json.getString("umzzal_dir").toString());
 
                         tl_list.add(data);
-                        tl_tabFrame_context.tl_ListView.invalidateViews();
+                        tl_tabFrame_context.mDataset.add(i, data);
                     }
                 }
-                tl_tabFrame_context.tl_ListView.invalidate();
 
             } catch (Exception e) {
                 // TODO: handle exception

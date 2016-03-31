@@ -2,11 +2,53 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\돈영\.gradle\caches\modules-2\files-2.1\in.srain.cube\grid-view-with-header-footer\1.0.12\6b45a6bca9304d0ae6d26d01a2ea2f62bfe46a27\grid-view-with-header-footer-1.0.12.jar"
+        jar="D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="6b45a6bca9304d0ae6d26d01a2ea2f62bfe46a27">
-        <dex dex="D:\AND\androidstudio\workspace\app\build\intermediates\pre-dexed\debug\grid-view-with-header-footer-1.0.12-3e096441e35a2fb868d7fde4ea3f017f9b2917a9.jar" />
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="D:\AND\androidstudio\workspace\app\build\intermediates\pre-dexed\debug\classes-c7200987ce9d9f89c50aa6cf5af9a4909e3fd808.jar" />
+    </item>
+    <item
+        jar="D:\AND\android-sdk_r24.3.3-windows\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="D:\AND\androidstudio\workspace\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.0-2b848a00ca19ba15ff7694472c5d63c78a1d63e2.jar" />
+    </item>
+    <item
+        jar="D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="D:\AND\androidstudio\workspace\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.0-464bd299e8742e19e6b133421aba34f937ffcd0e.jar" />
+    </item>
+    <item
+        jar="D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
+        <dex dex="D:\AND\androidstudio\workspace\app\build\intermediates\pre-dexed\debug\classes-1714f6b83d8149f44ea297dcc5bddfd2359eda14.jar" />
+    </item>
+    <item
+        jar="D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="D:\AND\androidstudio\workspace\app\build\intermediates\pre-dexed\debug\classes-2f02eda520d5a3b25767fba226d2998b17e7eed0.jar" />
+    </item>
+    <item
+        jar="D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="D:\AND\androidstudio\workspace\app\build\intermediates\pre-dexed\debug\classes-7723f4b7b04dedc73bac977f3fbde59127889354.jar" />
+    </item>
+    <item
+        jar="D:\AND\androidstudio\workspace\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="D:\AND\androidstudio\workspace\app\build\intermediates\pre-dexed\debug\classes-c4e6d3639805f177ceb2a5021a910355d8dbc36f.jar" />
     </item>
 
 </items>

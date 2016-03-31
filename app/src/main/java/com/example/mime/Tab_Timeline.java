@@ -7,6 +7,8 @@ import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -16,12 +18,19 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
+import java.util.ArrayList;
+
 public class Tab_Timeline extends Activity {
-    ListView tl_ListView;
-    static TimeLine_ListAdapter tl_ListAdapter;
+
     String api_url;
     JsonDownLoad task;
-    ImageView imageView;
+
+    public RecyclerView tl_RecyclerView;
+    public RecyclerView.Adapter tl_Adapter;
+    public RecyclerView.LayoutManager tl_LayoutManager;
+
+    public ArrayList<TimeLine_ListViewItem> mDataset;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,20 +41,15 @@ public class Tab_Timeline extends Activity {
         api_url = "http://tadalab.dothome.co.kr/core/api_test.php?method=downloadUmzzalDB";
         connectCheck("Tab_Timeline", api_url);
 
-        tl_ListView = (ListView) findViewById(R.id.timeline_listview);
-        tl_ListAdapter = new TimeLine_ListAdapter(this);
-        tl_ListView.setAdapter(tl_ListAdapter);
-        tl_ListView.setOnItemClickListener(new OnItemClickListener() {
+        tl_RecyclerView = (RecyclerView) findViewById(R.id.timeline_listview);
+        tl_RecyclerView.setHasFixedSize(true);
+        tl_LayoutManager = new LinearLayoutManager(this);
+        tl_RecyclerView.setLayoutManager(tl_LayoutManager);
 
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                // TODO Auto-generated method stub
-                Intent i = new Intent(Tab_Timeline.this, Project_info.class);
-                // i.putExtra("pos", Integer.valueOf(position).toString());
-                startActivity(i);
+        mDataset = new ArrayList<>();
+        tl_Adapter = new TimeLine_Adapter(mDataset, this.getApplicationContext());
+        tl_RecyclerView.setAdapter(tl_Adapter);
 
-            }
-        });
     }
 
     public void connectCheck(String page, String url) {

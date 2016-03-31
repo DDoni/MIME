@@ -73,7 +73,7 @@
                 android:src="@drawable/longcamera_click"/>
         </LinearLayout>
 
-        <ListView
+        <android.support.v7.widget.RecyclerView
             android:id="@+id/longGif_List"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
@@ -84,8 +84,9 @@
             android:dividerHeight="1.5dp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:paddingTop="15dp">
-        </ListView>
+            android:paddingTop="15dp"
+
+            />
     </LinearLayout>
 
 </LinearLayout>

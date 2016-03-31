@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <!-- From: file:/D:/AND/androidstudio/workspace/app/src/main/res/values/unit.xml -->
     <eat-comment/>
     <string-array name="cutMaximum">
-        <item>설정안함</item>
+        <item>설정안함 ▼</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
@@ -20,220 +20,6 @@
         <item>30</item>
         <item>35</item>
         <item>40</item>
-    </string-array>
-    <string-array name="spinner_day">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
-        <item>10</item>
-        <item>11</item>
-        <item>12</item>
-        <item>13</item>
-        <item>14</item>
-        <item>15</item>
-        <item>16</item>
-        <item>17</item>
-        <item>18</item>
-        <item>19</item>
-        <item>20</item>
-        <item>21</item>
-        <item>22</item>
-        <item>23</item>
-        <item>24</item>
-        <item>25</item>
-        <item>26</item>
-        <item>27</item>
-        <item>28</item>
-        <item>29</item>
-        <item>30</item>
-        <item>31</item>
-    </string-array>
-    <string-array name="spinner_hour">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
-        <item>10</item>
-        <item>11</item>
-        <item>12</item>
-        <item>13</item>
-        <item>14</item>
-        <item>15</item>
-        <item>16</item>
-        <item>17</item>
-        <item>18</item>
-        <item>19</item>
-        <item>20</item>
-        <item>21</item>
-        <item>22</item>
-        <item>23</item>
-        <item>24</item>
-    </string-array>
-    <string-array name="spinner_minute">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
-        <item>10</item>
-        <item>11</item>
-        <item>12</item>
-        <item>13</item>
-        <item>14</item>
-        <item>15</item>
-        <item>16</item>
-        <item>17</item>
-        <item>18</item>
-        <item>19</item>
-        <item>20</item>
-        <item>21</item>
-        <item>22</item>
-        <item>23</item>
-        <item>24</item>
-        <item>25</item>
-        <item>26</item>
-        <item>27</item>
-        <item>28</item>
-        <item>29</item>
-        <item>30</item>
-        <item>31</item>
-        <item>32</item>
-        <item>33</item>
-        <item>34</item>
-        <item>35</item>
-        <item>36</item>
-        <item>37</item>
-        <item>38</item>
-        <item>39</item>
-        <item>40</item>
-        <item>41</item>
-        <item>42</item>
-        <item>43</item>
-        <item>44</item>
-        <item>45</item>
-        <item>46</item>
-        <item>47</item>
-        <item>48</item>
-        <item>49</item>
-        <item>50</item>
-        <item>51</item>
-        <item>52</item>
-        <item>53</item>
-        <item>54</item>
-        <item>55</item>
-        <item>56</item>
-        <item>57</item>
-        <item>58</item>
-        <item>59</item>
-        <item>60</item>
-    </string-array>
-    <string-array name="spinner_month">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
-        <item>10</item>
-        <item>11</item>
-        <item>12</item>
-    </string-array>
-    <string-array name="spinner_sec">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
-        <item>10</item>
-        <item>11</item>
-        <item>12</item>
-        <item>13</item>
-        <item>14</item>
-        <item>15</item>
-        <item>16</item>
-        <item>17</item>
-        <item>18</item>
-        <item>19</item>
-        <item>20</item>
-        <item>21</item>
-        <item>22</item>
-        <item>23</item>
-        <item>24</item>
-        <item>25</item>
-        <item>26</item>
-        <item>27</item>
-        <item>28</item>
-        <item>29</item>
-        <item>30</item>
-        <item>31</item>
-        <item>32</item>
-        <item>33</item>
-        <item>34</item>
-        <item>35</item>
-        <item>36</item>
-        <item>37</item>
-        <item>38</item>
-        <item>39</item>
-        <item>40</item>
-        <item>41</item>
-        <item>42</item>
-        <item>43</item>
-        <item>44</item>
-        <item>45</item>
-        <item>46</item>
-        <item>47</item>
-        <item>48</item>
-        <item>49</item>
-        <item>50</item>
-        <item>51</item>
-        <item>52</item>
-        <item>53</item>
-        <item>54</item>
-        <item>55</item>
-        <item>56</item>
-        <item>57</item>
-        <item>58</item>
-        <item>59</item>
-        <item>60</item>
-    </string-array>
-    <string-array name="spinner_year">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
-        <item>10</item>
     </string-array>
     <!-- From: file:/D:/AND/androidstudio/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
@@ -272,6 +58,25 @@
     <color name="cardview_light_background">#FFFAFAFA</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
+    <!-- From: file:/D:/AND/androidstudio/workspace/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_colors.xml -->
+    <eat-comment/>
+    <color name="common_action_bar_splitter">#d2d2d2</color>
+    <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
+    <color name="common_google_signin_btn_text_dark_disabled">#1F000000</color>
+    <color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
+    <color name="common_google_signin_btn_text_dark_pressed">@android:color/white</color>
+    <color name="common_google_signin_btn_text_light_default">#90000000</color>
+    <color name="common_google_signin_btn_text_light_disabled">#1F000000</color>
+    <color name="common_google_signin_btn_text_light_focused">#90000000</color>
+    <color name="common_google_signin_btn_text_light_pressed">#DE000000</color>
+    <color name="common_plus_signin_btn_text_dark_default">@android:color/white</color>
+    <color name="common_plus_signin_btn_text_dark_disabled">#FFAAAAAA</color>
+    <color name="common_plus_signin_btn_text_dark_focused">@android:color/white</color>
+    <color name="common_plus_signin_btn_text_dark_pressed">@android:color/white</color>
+    <color name="common_plus_signin_btn_text_light_default">#FF737373</color>
+    <color name="common_plus_signin_btn_text_light_disabled">#FFAAAAAA</color>
+    <color name="common_plus_signin_btn_text_light_focused">#FF737373</color>
+    <color name="common_plus_signin_btn_text_light_pressed">#DE000000</color>
     <!-- From: file:/D:/AND/androidstudio/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
@@ -344,6 +149,7 @@
     <declare-styleable name="LinearLayoutCompat"><attr name="android:orientation"/><attr name="android:gravity"/><attr name="android:baselineAligned"/><attr name="android:baselineAlignedChildIndex"/><attr name="android:weightSum"/><attr format="boolean" name="measureWithLargestChild"/><attr name="divider"/><attr name="showDividers"><flag name="none" value="0"/><flag name="beginning" value="1"/><flag name="middle" value="2"/><flag name="end" value="4"/></attr><attr format="dimension" name="dividerPadding"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_weight"/><attr name="android:layout_gravity"/></declare-styleable>
     <declare-styleable name="ListPopupWindow"><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/></declare-styleable>
+    <declare-styleable name="LoadingImageView"><attr format="enum" name="imageAspectRatioAdjust"><enum name="none" value="0"/><enum name="adjust_width" value="1"/><enum name="adjust_height" value="2"/></attr><attr format="float" name="imageAspectRatio"/><attr format="boolean" name="circleCrop"/></declare-styleable>
     <declare-styleable name="MenuGroup"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:checkableBehavior"/><attr name="android:visible"/><attr name="android:enabled"/></declare-styleable>
     <declare-styleable name="MenuItem"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:title"/><attr name="android:titleCondensed"/><attr name="android:icon"/><attr name="android:alphabeticShortcut"/><attr name="android:numericShortcut"/><attr name="android:checkable"/><attr name="android:checked"/><attr name="android:visible"/><attr name="android:enabled"/><attr name="android:onClick"/><attr name="showAsAction"><flag name="never" value="0"/><flag name="ifRoom" value="1"/><flag name="always" value="2"/><flag name="withText" value="4"/><flag name="collapseActionView" value="8"/></attr><attr format="reference" name="actionLayout"/><attr format="string" name="actionViewClass"/><attr format="string" name="actionProviderClass"/></declare-styleable>
     <declare-styleable name="MenuView"><attr name="android:itemTextAppearance"/><attr name="android:horizontalDivider"/><attr name="android:verticalDivider"/><attr name="android:headerBackground"/><attr name="android:itemBackground"/><attr name="android:windowAnimationStyle"/><attr name="android:itemIconDisabledAlpha"/><attr format="boolean" name="preserveIconSpacing"/></declare-styleable>
@@ -354,6 +160,7 @@
     <declare-styleable name="ScrimInsetsFrameLayout"><attr format="color|reference" name="insetForeground"/></declare-styleable>
     <declare-styleable name="ScrollingViewBehavior_Params"><attr format="dimension" name="behavior_overlapTop"/></declare-styleable>
     <declare-styleable name="SearchView"><attr format="reference" name="layout"/><attr format="boolean" name="iconifiedByDefault"/><attr name="android:maxWidth"/><attr format="string" name="queryHint"/><attr format="string" name="defaultQueryHint"/><attr name="android:imeOptions"/><attr name="android:inputType"/><attr format="reference" name="closeIcon"/><attr format="reference" name="goIcon"/><attr format="reference" name="searchIcon"/><attr format="reference" name="searchHintIcon"/><attr format="reference" name="voiceIcon"/><attr format="reference" name="commitIcon"/><attr format="reference" name="suggestionRowLayout"/><attr format="reference" name="queryBackground"/><attr format="reference" name="submitBackground"/><attr name="android:focusable"/></declare-styleable>
+    <declare-styleable name="SignInButton"><attr format="reference|enum" name="buttonSize"><enum name="standard" value="0"/><enum name="wide" value="1"/><enum name="icon_only" value="2"/></attr><attr format="reference|enum" name="colorScheme"><enum name="dark" value="0"/><enum name="light" value="1"/><enum name="auto" value="2"/></attr><attr format="reference|string" name="scopeUris"/></declare-styleable>
     <declare-styleable name="SnackbarLayout"><attr name="android:maxWidth"/><attr name="elevation"/><attr format="dimension" name="maxActionInlineWidth"/></declare-styleable>
     <declare-styleable name="Spinner"><attr format="reference" name="prompt"/><attr format="enum" name="spinnerMode"><enum name="dialog" value="0"/><enum name="dropdown" value="1"/></attr><attr name="android:dropDownSelector"/><attr name="android:popupBackground"/><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/><attr name="android:dropDownWidth"/><attr format="reference" name="popupPromptView"/><attr name="android:gravity"/><attr format="boolean" name="disableChildrenWhenDisabled"/><attr name="android:background"/></declare-styleable>
     <declare-styleable name="SwitchCompat"><attr name="android:thumb"/><attr format="reference" name="track"/><attr name="android:textOn"/><attr name="android:textOff"/><attr format="dimension" name="thumbTextPadding"/><attr format="reference" name="switchTextAppearance"/><attr format="dimension" name="switchMinWidth"/><attr format="dimension" name="switchPadding"/><attr format="boolean" name="splitTrack"/><attr format="boolean" name="showText"/></declare-styleable>
@@ -509,6 +316,9 @@
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="abc_max_action_buttons">2</integer>
     <integer name="cancel_button_image_alpha">127</integer>
+    <!-- From: file:/D:/AND/androidstudio/workspace/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res/values/version.xml -->
+    <eat-comment/>
+    <integer name="google_play_services_version">8487000</integer>
     <!-- From: file:/D:/AND/androidstudio/workspace/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <integer name="snackbar_text_max_lines">2</integer>
@@ -539,6 +349,45 @@
     <!-- From: file:/D:/AND/androidstudio/workspace/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <!-- From: file:/D:/AND/androidstudio/workspace/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res/values/auth_strings.xml -->
+    <eat-comment/>
+    <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
+    <string name="auth_google_play_services_client_google_display_name">Google</string>
+    <!-- From: file:/D:/AND/androidstudio/workspace/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml -->
+    <eat-comment/>
+    <string name="common_google_play_services_api_unavailable_text"><ns1:g id="app_name">%1$s</ns1:g> requires one or more Google Play services that are not currently available. Please contact the developer for assistance.</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable Google Play services</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Get Google Play services</string>
+    <string msgid="2122112764540849864" name="common_google_play_services_install_text_phone"><ns1:g id="app_name">%1$s</ns1:g> won\'t run without Google Play services, which are missing from your phone.</string>
+    <string msgid="7351599665250191022" name="common_google_play_services_install_text_tablet"><ns1:g id="app_name">%1$s</ns1:g> won\'t run without Google Play services, which are missing from your tablet.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_invalid_account_text">The specified account does not exist on this device. Please choose a different account.</string>
+    <string name="common_google_play_services_invalid_account_title">Invalid Account</string>
+    <string name="common_google_play_services_network_error_text">A data connection is required to connect to Google Play services.</string>
+    <string name="common_google_play_services_network_error_title">Network Error</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_restricted_profile_text">Accessing accounts from a restricted profile is not supported.</string>
+    <string name="common_google_play_services_restricted_profile_title">Restricted Profile</string>
+    <string name="common_google_play_services_sign_in_failed_text">Error signing in the specified account. Please choose a different account.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Sign in failed</string>
+    <!-- From: file:/D:/AND/androidstudio/workspace/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res/values/common_strings.xml -->
+    <eat-comment/>
+    <string name="common_google_play_services_unknown_issue"><ns1:g id="app_name">%1$s</ns1:g> is having trouble with Google Play services. If the problem persists, please contact the developer for assistance.</string>
+    <!-- From: file:/D:/AND/androidstudio/workspace/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml -->
+    <eat-comment/>
+    <string name="common_google_play_services_unsupported_text"><ns1:g id="app_name">%1$s</ns1:g> relies on Google Play services, which is not supported by your device. Contact the manufacturer for assistance.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play services</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Update</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run unless you update Google Play services.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_updating_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run without Google Play services, which are currently updating.</string>
+    <string name="common_google_play_services_updating_title">Google Play services are updating</string>
+    <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
     <!-- From: file:/D:/AND/androidstudio/workspace/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="hello_world">Hello world!</string>
